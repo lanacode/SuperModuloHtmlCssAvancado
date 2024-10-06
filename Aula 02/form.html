@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        label:has(input[required][type="text"])::before {
+            content: '*';
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <label>
+            Nome:
+            <input type="text" name="nome" id="campo-nome" required>
+        </label>
+
+        <label>
+            Nome:
+            <input type="text" name="nome" id="campo-nome" required>
+        </label>
+
+        <label>
+            Nome:
+            <input type="text" name="nome" id="campo-nome" required>
+        </label>
+
+        <label>
+            Nome:
+            <input type="text" name="nome" id="campo-nome" required>
+        </label>
+        
+        <label>
+            Sobrenome:
+            <input type="text" name="sobrenome" id="campo-sobrenome">
+        </label>
+
+        <label>
+            Idade:
+            <input type="number" name="idade" id="campo-idade">
+        </label>
+        <label for="campo-existe">
+            <input type="checkbox" name="existe" id="campo-existe" required>
+            Você existe?
+        </label>
+        
+        <button>ENVIAR</button>
+    </form>
+</body>
+</html>
