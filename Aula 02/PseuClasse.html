@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* .container:hover h1 {
+            color: red;
+        }
+        
+        p:hover {
+            color: aqua;
+        } */
+
+        .container:has(h1) {
+            background-color: #1a1a1a;
+            color: white;
+        }
+
+        .container p:not(.sempre-ativo) {
+            display: none;
+        }
+
+        .container p:is(.sempre-ativo) {
+            color: aqua;
+        }
+
+        .container:hover p {
+            display: block;
+        }
+
+        .container h1:active {
+            color: aqua;
+        }
+
+        .container :focus {
+            background-color: red;
+        }
+
+        .container:empty {
+            height: 20px;
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Título</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas doloremque, quis, nobis inventore quo deleniti
+            fuga sit culpa tempore corporis beatae aliquid ipsum ullam architecto quod laborum? Aliquam, illo quam!</p>
+
+        <p class="sempre-ativo">Sempre ativo</p>
+
+        <form>
+            <input type="text">
+            <input type="text">
+            <button>Teste</button>
+        </form>
+    </div>
+
+    <div class="container">
+        <h2>Teste</h2>
+    </div>
+</body>
+
+</html>
