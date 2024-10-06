@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        input::placeholder {
+            color: red;
+        }
+
+        p:not(#texto)::first-letter {
+            font-size: 48px;
+        }
+
+        p:not(#texto)::first-line {
+            color: red;
+        }
+        
+        #texto::before {
+            content: '';
+            display: inline-block;
+            width: 4px;
+            height: 4px;
+            background-color: red;
+            border-radius: 9999px;
+        }
+
+        #texto::after {
+            content: '>';
+            color: red;
+            font-size: 48px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <input type="text" placeholder="Texto substituo">
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam repudiandae asperiores facilis error tenetur maiores minima laborum ea? Dolore voluptate temporibus ipsum? Eaque tempore quia, fugiat accusantium laudantium possimus perferendis.</p>
+
+    <p id="texto">Texto de exemplo</p>
+</body>
+</html>
