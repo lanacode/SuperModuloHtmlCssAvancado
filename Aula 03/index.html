@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-color: #1a1a1a;
+        }
+        
+        #quadrado {
+            width: 100px;
+            height: 100px;
+
+            background-color: #FAFAFA;
+            margin-top: 50px;
+            margin-left: 50px;
+            border-top: 4px solid red;
+
+            transition: all 5000ms linear;
+        }
+
+        #quadrado:hover {
+            transform: rotate(720deg);
+            height: 150px;
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div id="quadrado">
+
+    </div>
+</body>
+</html>
